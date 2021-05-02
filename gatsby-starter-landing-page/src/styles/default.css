@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura'), url(../styles/font/Futura_Bold_font.ttf) format('truetype');
+}
+
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  z-index: auto;
+}
