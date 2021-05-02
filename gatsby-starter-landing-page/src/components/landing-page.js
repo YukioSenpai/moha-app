@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components';
 import logo from '../images/logo.png'
+import phones from '../images/phones.png'
 import { FacebookOutlined, LinkedinOutlined, InstagramOutlined, AppleOutlined } from '@ant-design/icons';
 import { Button } from 'antd'
 import { Link } from "gatsby"
@@ -20,6 +21,14 @@ margin-left: 1rem;
 const Social = styled.div``;
 
 const Logo = styled.img``;
+
+const Phones = styled.img`
+position: absolute;
+top: 150px;
+left: 800px;
+height: auto;	
+width: 50%;
+`;
 
 const Title = styled.div`
 font-size: 5rem;
@@ -42,6 +51,33 @@ const AppleButton = styled.button`
 display: flex;
 justify-content: space-between;
 background-color: #000;
+`;
+
+const Contact = styled.button`
+margin-top: 2rem;
+height: 2.5rem;
+align-items: center;
+display: flex;
+outline: none;
+padding: 0.5em 1.5em;
+border: none;
+background-color: #fdc02e;
+border-radius: .5em;
+text-decoration: none;
+font-weight: 400;
+color: #002060;
+text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+text-align: center;
+transition: all 0.2s;
+text-transform: none;
+font-weight: bold;
+
+&:hover {
+background-color: #002060;
+    color: #fdc02e;
+    font-weight: bold;
+    cursor: pointer;
+}
 `;
 
 const LandingPage = ({ children }) => (
@@ -77,6 +113,8 @@ const LandingPage = ({ children }) => (
                 <div style={{ color: '#fff', fontFamily: 'Futura', fontSize: '2rem' }}>App Store</div>
             </div>
         </AppleButton>
+        <Contact>Contactez-nous</Contact>
+        <Phones src={phones} />
     </Container>
 )
 
