@@ -5,7 +5,7 @@ import downloads from '../images/andoird.png'
 import downloads2 from '../images/apple.png'
 import phones from '../images/phones.png'
 import { FacebookOutlined, LinkedinOutlined, InstagramOutlined } from '@ant-design/icons';
-import { Button, Popover } from 'antd'
+import { Button } from 'antd'
 import { Link } from "gatsby"
 
 const Container = styled.div`
@@ -58,15 +58,15 @@ width: 60%;
 `;
 
 const Title = styled.div`
-font-size: 5rem;
+font-size: 4.5rem;
 font-family: Futura;
 width: 35%;
 color: #002060;
-margin-top: 5.3rem;
+margin-top: 3.6rem;
 `;
 
 const Description = styled.div`
-font-size: 1.6rem;
+font-size: 1.35rem;
 font-family: Roboto;
 width: 40%;
 color: #002060;
@@ -76,7 +76,7 @@ margin-bottom: 3.5rem;
 `;
 
 const Contact = styled.button`
-margin-top: 3rem;
+margin-top: 2.4rem;
 height: 2.5rem;
 align-items: center;
 display: flex;
@@ -102,6 +102,10 @@ background-color: #002060;
 }
 `;
 
+const LiText = styled.li`
+margin-top: .1rem;
+`;
+
 const LandingPage = ({ children }) => (
     <Container>
         <Navbar>
@@ -125,7 +129,16 @@ const LandingPage = ({ children }) => (
             </Social>
         </Navbar>
         <Title>L'application qui vous veut du bien</Title>
-        <Description>Parce qu'aujourd'hui, votre santé est ce qu'il y a de plus précieux, Moha a conçu l'application qui vous permet d'améliorer votre bien-être au quotidien. Et c'est offert par votre entreprise !</Description>
+        <Description>
+            <p>Avec Moha,</p>
+            <ul>
+                <LiText> Évaluez votre niveau de bien-être</LiText>
+                <LiText> Adoptez les bonnes pratiques bien-être de nos experts</LiText>
+                <LiText> Créez vos propres habitudes pour vous sentir mieux au quotidien</LiText>
+            </ul>
+            <p>Parce que votre santé est ce qu'il y a de plus précieux.</p>
+            <p>L'application est bientôt disponible. Soyez informé·e de sa sortie en avant-première !</p>
+        </Description>
         <DivButton>
             <Downloads src={downloads2} />
             <Downloads2 src={downloads} />
@@ -133,7 +146,7 @@ const LandingPage = ({ children }) => (
         <Coming>Coming soon ! 🎉</Coming>
         <DivButton>
             <Link style={{ textDecoration: 'none' }} to='https://www.linkedin.com/in/quentin-ryckewaert/'>
-                <Contact>Contactez-nous</Contact>
+                <Contact>Tenez-moi informé.e de sa sortie !</Contact>
             </Link>
         </DivButton>
         <Phones src={phones} />

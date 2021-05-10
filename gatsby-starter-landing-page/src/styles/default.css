@@ -3,6 +3,11 @@
   src: local('Futura'), url(../styles/font/Futura_Bold_font.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(../styles/font/Roboto/Roboto-Thin.ttf) format('truetype');
+}
+
 * {
   box-sizing: border-box;
 }
