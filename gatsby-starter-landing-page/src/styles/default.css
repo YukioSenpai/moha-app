@@ -8,6 +8,11 @@
   src: local('Roboto'), url(../styles/font/Roboto/Roboto-Thin.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(../styles/font/Poppins&Roboto/Poppins/PoppinsSemiBold.ttf) format('truetype');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,11 +25,11 @@ html {
 }
 body {
   margin: 0;
-  background-image: url("../images/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100%;
   width: 100%;
-  z-index: auto;
+  background-image: url("../images/background.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+z-index: auto;
 }

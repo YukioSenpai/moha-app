@@ -2,7 +2,7 @@
   "name": "moha-website",
   "private": true,
   "description": "Landing page moha",
-  "homepage": "http://www.moha-app.com/",
+  "homepage": "https://www.moha-app.com/",
   "version": "0.1.0",
   "author": "Steven Travers <steven@libertrip.com>",
   "dependencies": {

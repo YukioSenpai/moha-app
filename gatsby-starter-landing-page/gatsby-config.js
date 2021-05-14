@@ -3,7 +3,7 @@ module.exports = {
     title: `Starter Landing Page`,
     description: `A barebone landing page starter with some minimal styles.`,
     author: `@YukioSenpaï`,
-    siteUrl: `http://www.moha-app.com/`,
+    siteUrl: `https://www.moha-app.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

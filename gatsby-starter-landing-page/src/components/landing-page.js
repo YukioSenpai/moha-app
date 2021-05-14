@@ -1,12 +1,21 @@
 import React from "react"
 import styled from 'styled-components';
 import logo from '../images/logo.png'
+import background from '../images/background.png'
 import downloads from '../images/andoird.png'
 import downloads2 from '../images/apple.png'
 import phones from '../images/phones.png'
 import { FacebookOutlined, LinkedinOutlined, InstagramOutlined } from '@ant-design/icons';
 import { Button } from 'antd'
 import { Link } from "gatsby"
+
+const Background = styled.span`
+background-image: url("../images/background.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+z-index: auto;
+`;
 
 const Container = styled.div`
 height: 100vh;
@@ -58,8 +67,8 @@ width: 60%;
 `;
 
 const Title = styled.div`
-font-size: 4.5rem;
-font-family: Futura;
+font-size: 3.5rem;
+font-family: Poppins;
 width: 35%;
 color: #002060;
 margin-top: 3.6rem;
@@ -107,6 +116,7 @@ margin-top: .1rem;
 `;
 
 const LandingPage = ({ children }) => (
+    <Background>
     <Container>
         <Navbar>
             <Logo src={logo} />
@@ -151,6 +161,7 @@ const LandingPage = ({ children }) => (
         </DivButton>
         <Phones src={phones} />
     </Container>
+    </Background>
 )
 
 export default LandingPage
